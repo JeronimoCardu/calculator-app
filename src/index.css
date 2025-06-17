@@ -1,0 +1,27 @@
+@import 'tailwindcss';
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+
+@font-face {
+  font-family: LeagueSpartan;
+  src: url(../public/fonts/LeagueSpartan-Bold.ttf);
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  font-size: 100%;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: LeagueSpartan;
+}
+
+.light {
+  color: gray;
+}
+
+.dark {
+  color: darkblue;
+}
