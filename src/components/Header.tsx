@@ -8,8 +8,8 @@ type Props = {
 
 export default function Header({ theme, setTheme }: Props) {
   return (
-    <header className='flex justify-between items-center bg-red-500 p-6'>
-      <h1 className=' text-[2rem]'>calc</h1>
+    <header className={` flex justify-between w-full items-center  p-6`}>
+      <h1 className={`${theme}-mainColor text-[2rem]`}>calc</h1>
       <ThemeToggle setTheme={setTheme} theme={theme} />
     </header>
   )

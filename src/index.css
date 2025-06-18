@@ -18,10 +18,154 @@ body,
   font-family: LeagueSpartan;
 }
 
-.light {
-  color: gray;
+@layer base {
+  #calculator div {
+    font-size: 2rem;
+    padding: 10px;
+    border-radius: 5px;
+  }
 }
 
-.dark {
-  color: darkblue;
+@theme {
+  --color-dark: #3a4663;
+  --color-light: #e6e6e6;
+  --color-purple: #17062a;
+
+  --breakpoint-tablet: 768px;
+  --breakpoint-desktop: 1440px;
+}
+
+/* DARK MODE */
+.dark-mainColor {
+  color: white;
+}
+
+.dark-inputBg {
+  background-color: #181f33;
+}
+.dark-calculatorBg {
+  background-color: #242d44;
+}
+.dark-number {
+  cursor: pointer;
+  background-color: #eae3dc;
+  box-shadow: inset 0px -4px 0px #b3a497;
+  color: #434a59;
+}
+.dark-delete,
+.dark-reset {
+  cursor: pointer;
+  color: white;
+  background-color: #647198;
+  box-shadow: inset 0px -4px 0px #414e73;
+}
+
+.dark-equal {
+  cursor: pointer;
+  color: white;
+  background-color: #d03f2f;
+  box-shadow: inset 0px -4px 0px #93261a;
+}
+.dark-ball {
+  background-color: #d03f2f;
+}
+
+/* LIGHT MODE */
+.light-mainColor {
+  color: #36362c;
+}
+
+.light-inputBg {
+  background-color: #eeeeee;
+}
+.light-calculatorBg {
+  background-color: #d2cdcd;
+}
+.light-number {
+  font-size: 2.5rem;
+  cursor: pointer;
+  background-color: #e5e4e1;
+  box-shadow: inset 0px -4px 0px #a79e91;
+  color: #36362c;
+}
+.light-delete,
+.light-reset {
+  font-size: 1.75rem;
+  cursor: pointer;
+  color: white;
+  background-color: #378187;
+  box-shadow: inset 0px -4px 0px #1b6066;
+}
+
+.light-equal {
+  font-size: 1.75rem;
+  cursor: pointer;
+  color: white;
+  background-color: #c85402;
+  box-shadow: inset 0px -4px 0px #873901;
+}
+.light-ball {
+  background-color: #d03f2f;
+}
+
+/* PURPLE MODE */
+.purple-mainColor {
+  color: #ffe53d;
+}
+
+.purple-inputBg {
+  background-color: #1e0936;
+}
+.purple-calculatorBg {
+  background-color: #1e0936;
+}
+.purple-number {
+  font-size: 2.5rem;
+  cursor: pointer;
+  background-color: #331c4d;
+  box-shadow: inset 0px -4px 0px #881c9e;
+  color: #ffe53d;
+}
+.purple-delete,
+.purple-reset {
+  font-size: 1.75rem;
+  cursor: pointer;
+  color: white;
+  background-color: #56077c;
+  box-shadow: inset 0px -4px 0px #be15f4;
+}
+
+.purple-equal {
+  font-size: 1.75rem;
+  cursor: pointer;
+  color: #1a2327;
+  background-color: #00ded0;
+  box-shadow: inset 0px -4px 0px #6cf9f1;
+}
+.purple-ball {
+  background-color: #00ded0;
+}
+
+@media (width >= 768px) {
+  .dark-number {
+    font-size: 2.5rem;
+  }
+  .light-number {
+    font-size: 2.5rem;
+  }
+  .purple-number {
+    font-size: 2.5rem;
+  }
+  .dark-delete,
+  .dark-equal {
+    font-size: 1.75rem;
+  }
+  .light-delete,
+  .light-equal {
+    font-size: 1.75rem;
+  }
+  .purple-delete,
+  .purple-equal {
+    font-size: 1.75rem;
+  }
 }
